@@ -1,0 +1,7 @@
+{
+  "name": "FormaF(r)ajer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
