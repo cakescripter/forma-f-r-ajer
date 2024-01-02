@@ -1,13 +1,14 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
+import MemoriesPage from '../pages/MemoriesPage.vue';
 
 const routes = [
   {
-    path: '',
-    redirect: '/folder/Inbox'
+    path: '/',
+    redirect: '/memories'
   },
   {
-    path: '/folder/:id',
-    component: () => import ('../views/FolderPage.vue')
+    path: '/memories',
+    component: MemoriesPage
   }
 ]
 

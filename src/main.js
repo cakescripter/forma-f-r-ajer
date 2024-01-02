@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import App from './pages/MemoriesPage.vue'
 import router from './router';
 
 import { IonicVue } from '@ionic/vue';
@@ -21,11 +21,16 @@ import '@ionic/vue/css/flex-utils.css';
 import '@ionic/vue/css/display.css';
 
 /* Theme variables */
+import './theme/nowy.css';
 import './theme/variables.css';
+
+import BaseLayout from './components/base/BaseLayout.vue';
 
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
+
+app.component('base-layout', BaseLayout)
   
 router.isReady().then(() => {
   app.mount('#app');
